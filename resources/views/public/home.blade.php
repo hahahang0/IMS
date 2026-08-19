@@ -1,0 +1,9 @@
+@extends('public.layouts.app')
+@section('title','StockCore')
+@section('content')
+<main>
+   @include('public.home.hero')
+   @include('public.home.trust')
+   @include('public.home.problem-solution')
+</main>
+@endsection
