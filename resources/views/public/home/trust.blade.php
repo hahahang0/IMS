@@ -3,52 +3,52 @@
     $integrations = [
         [
             'name' => 'Xero',
-            'logo' => '/images/integrations/xero.svg',
+            'logo' => 'images/integrations/xero.svg',
         ],
 
         [
             'name' => 'Cin7',
-            'logo' => '/images/integrations/cin7.svg',
+            'logo' => 'images/integrations/cin7.svg',
         ],
 
         [
             'name' => 'Shopify',
-            'logo' => '/images/integrations/shopify.svg',
+            'logo' => 'images/integrations/shopify.svg',
         ],
 
         [
             'name' => 'WooCommerce',
-            'logo' => '/images/integrations/woocommerce.svg',
+            'logo' => 'images/integrations/woocommerce.svg',
         ],
 
         [
             'name' => 'MYOB',
-            'logo' => '/images/integrations/stripe.svg',
+            'logo' => 'images/integrations/stripe.svg',
         ],
 
         [
             'name' => 'Unleashed',
-            'logo' => '/images/integrations/pinterest.svg',
+            'logo' => 'images/integrations/pinterest.svg',
         ],
 
         [
             'name' => 'QuickBooks',
-            'logo' => '/images/integrations/quickbooks.svg',
+            'logo' => 'images/integrations/quickbooks.svg',
         ],
 
         [
             'name' => 'Square',
-            'logo' => '/images/integrations/zoho.svg',
+            'logo' => 'images/integrations/zoho.svg',
         ],
 
         [
             'name' => 'BigCommerce',
-            'logo' => '/images/integrations/bigcommerce.svg',
+            'logo' => 'images/integrations/bigcommerce.svg',
         ],
 
         [
             'name' => 'Amazon',
-            'logo' => '/images/integrations/amazon.svg',
+            'logo' => 'images/integrations/amazon.svg',
         ],
     ];
 
