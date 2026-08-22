@@ -111,38 +111,44 @@
     </div>
 </section>
 
+@push('scripts')
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
 
-        const logoContainer = document.querySelector('#integration-logos');
-        const logos = document.querySelectorAll('.integration-logo');
+    $(document).ready(function () {
 
-        if (!logoContainer || !logos.length) {
+        const logoContainer = $('#integration-logos');
+        const logos = $('.integration-logo');
+
+        // Stop if the elements don't exist
+        if (!logoContainer.length || !logos.length) {
             return;
         }
 
-        const observer = new IntersectionObserver((entries, observer) => {
 
-            entries.forEach(entry => {
+        const observer = new IntersectionObserver(function (entries, observer) {
+
+            $.each(entries, function (index, entry) {
 
                 if (entry.isIntersecting) {
 
-                    logos.forEach((logo, index) => {
+                    logos.each(function (index) {
 
-                        setTimeout(() => {
+                        const logo = $(this);
 
-                            logo.classList.remove('opacity-0', 'scale-75');
+                        setTimeout(function () {
 
-                            logo.classList.add(
-                                'opacity-100',
-                                'scale-100'
-                            );
+                            logo
+                                .removeClass('opacity-0 scale-75')
+                                .addClass('opacity-100 scale-100');
 
                         }, index * 150);
 
                     });
 
+
+                    // Stop observing after animation runs
                     observer.unobserve(entry.target);
+
                 }
 
             });
@@ -151,7 +157,12 @@
             threshold: 0.2
         });
 
-        observer.observe(logoContainer);
+
+        // Start observing the logo container
+        observer.observe(logoContainer[0]);
 
     });
+
 </script>
+
+@endpush

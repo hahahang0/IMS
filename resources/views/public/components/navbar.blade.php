@@ -84,8 +84,9 @@
                 Login
             </a>
 
-            <a href="#" class="rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition duration-200 hover:bg-blue-700 hover:shadow-md">
+            <a href="#" class="group inline-flex items-center gap-0 rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition duration-200 hover:bg-blue-700 hover:shadow-md">
                 Start Free Trial
+                
             </a>
 
         </div>
