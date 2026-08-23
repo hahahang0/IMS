@@ -157,7 +157,8 @@
 
                 <img id="use-case-image" src="{{ asset('images/use-cases/multi-channel.jpg') }}"
                     alt="Multi-channel inventory management"
-                    class="h-full w-full object-cover object-center transition-opacity duration-300">
+                    class="h-full w-full object-cover object-center transition-opacity duration-300"
+                    loading='lazy'>
 
             </div>
 

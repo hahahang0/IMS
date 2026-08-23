@@ -99,7 +99,7 @@
 
                     <div class="w-32 h-16 flex items-center justify-center mx-auto">
 
-                        <img src="{{ $integration['logo'] }}" alt="{{ $integration['name'] }} logo"
+                        <img src="{{ $integration['logo'] }}" alt="{{ $integration['name'] }} logo" loading='lazy'
                             class="max-w-full max-h-full object-contain">
 
                     </div>

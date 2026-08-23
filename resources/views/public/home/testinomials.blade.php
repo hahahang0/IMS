@@ -344,7 +344,7 @@
 
                             {{-- IMAGE --}}
 
-                            <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}"
+                            <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}" loading='lazy'
                                 class="absolute inset-0
            h-full w-full
            object-cover
