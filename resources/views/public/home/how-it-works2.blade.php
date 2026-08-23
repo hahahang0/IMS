@@ -237,7 +237,7 @@
                     group-hover:-translate-y-1
                     group-hover:shadow-[0_35px_90px_-25px_rgba(15,23,42,0.3)]">
 
-                        <img src="{{ asset('images/company_assets/stockcore_dashboard.png') }}"
+                        <img src="{{ asset('images/company_assets/stockcore_dashboard.webp') }}"
                             alt="StockCore inventory management dashboard" class="block w-full">
 
                     </div>

@@ -50,7 +50,7 @@
         [
             'name' => 'James Thore',
             'role' => 'Small Business Owner',
-            'image' => 'images/testimonials/image1.png',
+            'image' => 'images/testimonials/image1.webp',
             'quote' =>
                 'When our team rolled StockCore out across support and finance, manual follow-ups dropped in days. It finally felt like our operations stack was working for us.',
         ],
@@ -58,7 +58,7 @@
         [
             'name' => 'Sarah Mitchell',
             'role' => 'Product Manager',
-            'image' => 'images/testimonials/image2.png',
+            'image' => 'images/testimonials/image2.webp',
             'quote' =>
                 'StockCore gives our team a clear view of inventory across the business. We spend less time searching for information and more time getting work done.',
         ],
@@ -66,7 +66,7 @@
         [
             'name' => 'David Chen',
             'role' => 'Marketing Manager',
-            'image' => 'images/testimonials/image3.png',
+            'image' => 'images/testimonials/image3.webp',
             'quote' =>
                 'Everything feels much more organized now. StockCore has helped our team stay on top of products and make better decisions every day.',
         ],
@@ -74,7 +74,7 @@
         [
             'name' => 'Marcus Johnson',
             'role' => 'COO',
-            'image' => 'images/testimonials/image4.png',
+            'image' => 'images/testimonials/image4.webp',
             'quote' =>
                 'We used to rely on spreadsheets and manual updates. StockCore gave our team a much simpler way to keep inventory accurate.',
         ],
@@ -82,7 +82,7 @@
         [
             'name' => 'Priya Sharma',
             'role' => 'Inventory Head',
-            'image' => 'images/testimonials/image5.png',
+            'image' => 'images/testimonials/image5.webp',
             'quote' =>
                 'The biggest difference is visibility. Everyone on our team knows what is available, what is moving, and what needs attention.',
         ],
@@ -90,7 +90,7 @@
         [
             'name' => 'Alex Carter',
             'role' => 'Operations Manager',
-            'image' => 'images/testimonials/image6.png',
+            'image' => 'images/testimonials/image6.webp',
             'quote' =>
                 'StockCore removed so much unnecessary manual work from our daily process. Our inventory team can finally focus on the work that matters.',
         ],
@@ -98,7 +98,7 @@
         [
             'name' => 'Emma Wilson',
             'role' => 'Retail Manager',
-            'image' => 'images/testimonials/image7.png',
+            'image' => 'images/testimonials/image7.webp',
             'quote' =>
                 'Managing products across different categories became much easier. StockCore is simple enough for everyone on our team to use.',
         ],
@@ -106,7 +106,7 @@
         [
             'name' => 'Daniel Kim',
             'role' => 'Business Owner',
-            'image' => 'images/testimonials/image8.png',
+            'image' => 'images/testimonials/image8.webp',
             'quote' =>
                 'StockCore gives us confidence that our inventory numbers are accurate. It has become an important part of how we run the business.',
         ],

@@ -527,7 +527,7 @@
                 {{-- =================================================
          LAPTOP IMAGE
     ================================================= --}}
-                <img src="{{ asset('images/company_assets/laptop.png') }}" alt="StockCore inventory dashboard"
+                <img src="{{ asset('images/company_assets/laptop.webp') }}" alt="StockCore inventory dashboard"
                     class="absolute
            z-50
            w-[900px]

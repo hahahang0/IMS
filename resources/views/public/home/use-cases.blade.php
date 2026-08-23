@@ -560,7 +560,7 @@
                         value: '-30%',
                         text: 'stockouts<br>reduced'
                     },
-                    image: '/images/use-cases/multi_channel.png',
+                    image: '/images/use-cases/multi_channel.webp',
 
                 },
 
@@ -594,7 +594,7 @@
                         value: '-24%',
                         text: 'waste and<br>overstock'
                     },
-                    image: '/images/use-cases/manufactures.png',
+                    image: '/images/use-cases/manufactures.webp',
 
                 },
 
@@ -628,7 +628,7 @@
                         value: '-35%',
                         text: 'inventory<br>errors'
                     },
-                    image: '/images/use-cases/hybrid_product.png',
+                    image: '/images/use-cases/hybrid_product.webp',
 
                 },
 
@@ -663,7 +663,7 @@
                         text: 'compliance<br>errors'
                     },
 
-                    image: '/images/use-cases/quality_control.png',
+                    image: '/images/use-cases/quality_control.webp',
                 },
 
             };
