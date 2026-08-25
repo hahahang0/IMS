@@ -898,7 +898,7 @@
                     });
 
 
-                    // SHOW CONTENT
+                    // SHOW
 
                     $('#use-case-title, #use-case-description, #use-case-bullets')
                         .animate({
