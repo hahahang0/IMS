@@ -13,10 +13,16 @@
 </head>
 
 <body>
-    @include('public.components.navbar')
-    @yield('content')
-    @stack('scripts')
-    @include('public.components.footer')
-</body>
 
+    @include('public.components.navbar')
+
+    @yield('content')
+
+    @include('public.components.scroll-to-top')
+
+    @include('public.components.footer')
+
+    @stack('scripts')
+
+</body>
 </html>

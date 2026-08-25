@@ -1,6 +1,4 @@
-{{-- ============================================================
-    STOCKCORE — FINAL CTA SECTION
-============================================================ --}}
+{{-- FINAL CTA SECTION --}}
 <section id="cta"
     class="relative
            overflow-x-clip
@@ -14,9 +12,7 @@
            sm:py-28
            lg:py-32">
 
-    {{-- ========================================================
-        BACKGROUND GLOW
-    ========================================================= --}}
+    {{-- GLOWS --}}
 
     <div
         class="pointer-events-none absolute left-1/2 top-1/2
@@ -27,10 +23,7 @@
                blur-3xl">
     </div>
 
-
-    {{-- ========================================================
-        CTA CONTAINER
-    ========================================================= --}}
+    {{-- CTA CONTAINER --}}
     <div
         class="relative
            min-h-[560px]
@@ -44,9 +37,7 @@
            to-primary-400
            shadow-[0_30px_80px_-30px_rgba(30,64,175,0.45)]">
 
-        {{-- =================================================
-                DECORATIVE BACKGROUND GLOWS
-            ================================================== --}}
+        {{-- BACKGROUND GLOWS --}}
 
         {{-- <div
                 class="pointer-events-none absolute
@@ -77,9 +68,7 @@
                        blur-3xl"
             ></div> --}}
 
-        {{-- =========================================================
-    PREMIUM BACKGROUND LIGHTING
-========================================================= --}}
+
 
         {{-- Top-left blue light --}}
 
@@ -131,32 +120,10 @@
         </div>
 
 
-        {{-- =================================================
-                SUBTLE GRID
-            ================================================== --}}
-
-        {{-- <div class="pointer-events-none absolute inset-0
-                        opacity-[0.08]"
-                    style="
-                        background-image:
-                            linear-gradient(
-                                rgba(255,255,255,0.5) 1px,
-                                transparent 1px
-                            ),
-                            linear-gradient(
-                                90deg,
-                                rgba(255,255,255,0.5) 1px,
-                                transparent 1px
-                            );
-                        background-size: 48px 48px;
-                    ">
-                </div> --}}
 
 
 
-        {{-- =================================================
-                CONTENT WRAPPER
-            ================================================== --}}
+        {{-- CONTENT WRAPPER --}}
 
         <div
             class="relative z-10
@@ -165,10 +132,7 @@
 
                        lg:flex-row">
 
-
-            {{-- =================================================
-                    LEFT CONTENT
-                ================================================== --}}
+            {{-- LEFT CONTENT  --}}
 
             <div
                 class="flex w-full
@@ -181,10 +145,7 @@
                            lg:px-14
                            xl:px-16">
 
-
-                {{-- =================================================
-                        SMALL LABEL
-                    ================================================== --}}
+                {{-- SMALL LABEL --}}
 
                 <div
                     class="mb-7 inline-flex w-fit
@@ -224,9 +185,7 @@
 
 
 
-                {{-- =================================================
-                        HEADING
-                    ================================================== --}}
+                {{-- HEADING --}}
 
                 <h2
                     class="max-w-xl
@@ -256,9 +215,7 @@
 
 
 
-                {{-- =================================================
-                        DESCRIPTION
-                    ================================================== --}}
+                {{-- DESCRIPTION --}}
 
                 <p
                     class="mt-6 max-w-lg
@@ -275,9 +232,7 @@
 
 
 
-                {{-- =================================================
-                        BUTTONS
-                    ================================================== --}}
+                {{-- BUTTONS --}}
 
                 <div
                     class="mt-9
@@ -391,118 +346,14 @@
 
 
 
-                {{-- =================================================
-                        SMALL TRUST TEXT
-                    ================================================== --}}
 
-                {{-- <div
-                        class="mt-7
-                               flex flex-wrap
-                               items-center gap-x-5 gap-y-2
-                               text-xs
-                               text-blue-200/70"
-                    >
-
-                        <span class="flex items-center gap-1.5">
-
-                            <svg
-                                class="h-3.5 w-3.5 text-blue-300"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                            >
-                                <path
-                                    d="m5 12 4 4L19 6"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-
-                            No credit card required
-
-                        </span>
-
-
-                        <span class="hidden sm:block">
-                            •
-                        </span>
-
-
-                        <span class="flex items-center gap-1.5">
-
-                            <svg
-                                class="h-3.5 w-3.5 text-blue-300"
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2"
-                            >
-                                <path
-                                    d="m5 12 4 4L19 6"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-
-                            Set up in minutes
-
-                        </span>
-
-                    </div> --}}
 
             </div>
 
 
 
-            {{-- =================================================
-                    RIGHT SIDE — PRODUCT VISUAL
-                ================================================== --}}
 
-            {{-- <div
-                    class="relative
-                           flex w-full
-                           items-end justify-center
-
-                           lg:w-[52%]">
-
-
-                    <div
-                        class="pointer-events-none absolute
-                               bottom-10 right-10
-                               h-[300px] w-[500px]
-                               rounded-full
-                               bg-blue-400/25
-                               blur-3xl">
-                    </div>
-
-
-                
-
-                <img src="{{ asset('images/company_assets/laptop.png') }}" alt="StockCore inventory dashboard"
-                    class="absolute
-                            z-20
-
-                            w-[720px]
-                            max-w-none
-
-                            right-[-150px]
-                            bottom-[-35px]
-
-                            object-contain
-
-                            drop-shadow-[0_30px_40px_rgba(0,0,0,0.35)]
-
-                            transition-transform
-                            duration-700
-                            ease-out
-
-                            hover:translate-y-[-6px]">
-
-            </div> --}}
-            {{-- =================================================
-     RIGHT SIDE — PRODUCT VISUAL
-================================================= --}}
+            {{-- RIGHT SIDE VISUALS --}}
             <div
                 class="relative
            flex w-full
@@ -524,10 +375,9 @@
                blur-[120px]">
                 </div>
 
-                {{-- =================================================
-         LAPTOP IMAGE
-    ================================================= --}}
-                <img src="{{ asset('images/company_assets/laptop.png    ') }}" alt="StockCore inventory dashboard" loading='lazy'
+                {{-- IMAGE --}}
+                <img src="{{ asset('images/company_assets/laptop.png    ') }}" alt="StockCore inventory dashboard"
+                    loading='lazy'
                     class="absolute
            z-50
            w-[900px]
