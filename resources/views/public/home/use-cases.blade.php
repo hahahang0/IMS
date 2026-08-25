@@ -153,12 +153,19 @@
 
             {{-- BACKGROUND IMAGE --}}
 
-            <div class="absolute inset-y-0 right-0 hidden w-[48%] lg:block">
+            {{-- <div class="absolute inset-y-0 right-0 hidden w-[48%] lg:block">
 
-                <img id="use-case-image" src="{{ asset('images/use-cases/multi-channel.jpg') }}"
+                <img id="use-case-image" src="{{ asset('images/use-cases/multi_channel.jpg') }}"
                     alt="Multi-channel inventory management"
                     class="h-full w-full object-cover object-center transition-opacity duration-300"
                     loading='lazy'>
+
+            </div> --}}
+            <div class="absolute inset-y-0 right-0 hidden w-[48%] lg:block">
+
+                <img id="use-case-image" src="{{ asset('images/use-cases/multi_channel.webp') }}"
+                    alt="Multi-channel inventory management"
+                    class="h-full w-full object-cover object-center transition-opacity duration-300" loading="lazy">
 
             </div>
 
@@ -293,7 +300,7 @@
             </div>
 
 
-                {{-- glasses shards --}}
+            {{-- glasses shards --}}
 
             <div id="stat-cards" class="pointer-events-none absolute inset-0 z-30 hidden lg:block">
 
@@ -414,14 +421,15 @@
         </div>
 
 
-      {{-- BOTTOM BENEFITS --}}
+        {{-- BOTTOM BENEFITS --}}
 
         <div
             class="mt-5 grid overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_10px_40px_rgba(15,23,42,0.05)] sm:grid-cols-2 lg:grid-cols-4">
 
             <div class="flex items-center gap-4 border-b border-slate-200 p-6 lg:border-b-0 lg:border-r">
 
-                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary-600">
+                <div
+                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary-600">
 
                     <span class="text-xl">↻</span>
 
@@ -444,7 +452,8 @@
 
             <div class="flex items-center gap-4 border-b border-slate-200 p-6 lg:border-b-0 lg:border-r">
 
-                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary-600">
+                <div
+                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary-600">
 
                     <span class="text-xl">ϟ</span>
 
@@ -467,7 +476,8 @@
 
             <div class="flex items-center gap-4 border-b border-slate-200 p-6 lg:border-b-0 lg:border-r">
 
-                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary-600">
+                <div
+                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary-600">
 
                     <span class="text-xl">▥</span>
 
@@ -490,7 +500,8 @@
 
             <div class="flex items-center gap-4 p-6">
 
-                <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary-600">
+                <div
+                    class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-blue-50 text-primary-600">
 
                     <span class="text-xl">✓</span>
 
@@ -555,7 +566,7 @@
                         value: '-30%',
                         text: 'stockouts<br>reduced'
                     },
-                    image: '/images/use-cases/multi_channel.webp',
+                    image: "{{ asset('images/use-cases/multi_channel.webp') }}"
 
                 },
 
@@ -589,7 +600,7 @@
                         value: '-24%',
                         text: 'waste and<br>overstock'
                     },
-                    image: '/images/use-cases/manufactures.webp',
+                    image: "{{ asset('images/use-cases/manufactures.webp') }}"
 
                 },
 
@@ -623,7 +634,7 @@
                         value: '-35%',
                         text: 'inventory<br>errors'
                     },
-                    image: '/images/use-cases/hybrid_product.webp',
+                    image: "{{ asset('images/use-cases/hybrid_product.webp') }}"
 
                 },
 
@@ -658,12 +669,12 @@
                         text: 'compliance<br>errors'
                     },
 
-                    image: '/images/use-cases/quality_control.webp',
+                    image: "{{ asset('images/use-cases/quality_control.webp') }}"
                 },
 
             };
 
-// CARD POSITIONS
+            // CARD POSITIONS
 
             const cardPositions = {
 
@@ -728,12 +739,12 @@
 
             };
 
-//  INITIAL TAB
+            //  INITIAL TAB
 
             setActiveTab('multi-channel');
 
 
-        //    TAB CLICK
+            //    TAB CLICK
 
             $('.use-case-tab').on('click', function() {
 
@@ -744,7 +755,7 @@
             });
 
 
-        //    MAIN FUNCTION
+            //    MAIN FUNCTION
             function setActiveTab(caseName) {
 
                 const data = useCases[caseName];
@@ -756,7 +767,7 @@
                 }
 
 
-            //   ACTIVE TAB
+                //   ACTIVE TAB
 
                 $('.use-case-tab')
                     .removeClass('text-blue-600')
@@ -804,7 +815,7 @@
 
                 }, 200);
 
-            //    FADE CONTENT
+                //    FADE CONTENT
 
                 $('#use-case-title, #use-case-description, #use-case-bullets')
                     .stop(true, true)
@@ -826,7 +837,7 @@
 
                     $('#use-case-description').html(data.description);
 
-// UPDATE BULLETS
+                    // UPDATE BULLETS
 
                     let bullets = '';
 
