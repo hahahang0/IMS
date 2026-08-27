@@ -52,7 +52,7 @@
             {{-- TAB 1 --}}
 
             <button type="button" data-use-case="multi-channel" data-index="0"
-                class="use-case-tab group relative flex min-h-[130px] flex-col items-center justify-center gap-3 border-b border-r border-slate-200 px-4 py-6 transition-all duration-300 sm:border-b-0">
+                class="use-case-tab group relative flex min-h-[130px] flex-col items-center justify-center gap-3 border-b border-r border-slate-200 px-4 py-6 transition-all duration-300 sm:border-b-0 hover:cursor-pointer">
 
                 <span
                     class="tab-icon flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300">
@@ -77,7 +77,7 @@
             {{-- TAB 2 --}}
 
             <button type="button" data-use-case="manufacturers" data-index="1"
-                class="use-case-tab group relative flex min-h-[130px] flex-col items-center justify-center gap-3 border-b border-r border-slate-200 px-4 py-6 transition-all duration-300 sm:border-b-0">
+                class="use-case-tab group relative flex min-h-[130px] flex-col items-center justify-center gap-3 border-b border-r border-slate-200 px-4 py-6 transition-all duration-300 sm:border-b-0 hover:cursor-pointer">
 
                 <span
                     class="tab-icon flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300">
@@ -101,7 +101,7 @@
             {{-- TAB 3 --}}
 
             <button type="button" data-use-case="hybrid" data-index="2"
-                class="use-case-tab group relative flex min-h-[130px] flex-col items-center justify-center gap-3 border-b border-r border-slate-200 px-4 py-6 transition-all duration-300 sm:border-b-0">
+                class="use-case-tab group relative flex min-h-[130px] flex-col items-center justify-center gap-3 border-b border-r border-slate-200 px-4 py-6 transition-all duration-300 sm:border-b-0 hover:cursor-pointer" >
 
                 <span
                     class="tab-icon flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300">
@@ -125,7 +125,7 @@
             {{-- TAB 4 --}}
 
             <button type="button" data-use-case="regulated" data-index="3"
-                class="use-case-tab group relative flex min-h-[130px] flex-col items-center justify-center gap-3 px-4 py-6 transition-all duration-300">
+                class="use-case-tab group relative flex min-h-[130px] flex-col items-center justify-center gap-3 px-4 py-6 transition-all duration-300 hover:cursor-pointer">
 
                 <span
                     class="tab-icon flex h-11 w-11 items-center justify-center rounded-xl transition-all duration-300">

@@ -1,10 +1,10 @@
    <nav class="sticky top-0 z-50 border-b border-slate-200 bg-background">
 
-       <div class=" mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
+       <div class=" mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
 
            <a href="/" class="flex h-full items-center">
                <img src="{{ asset('images/company_assets/cropped_logo.webp') }}" alt="Company Logo"
-                   class="h-10 w-auto object-contain">
+                   class="h-12 w-auto object-contain">
            </a>
            {{-- Navigation --}}
            <div class="hidden items-center gap-8 md:flex">
@@ -14,7 +14,7 @@
                    {{-- Features trigger --}}
                    <a href="{{ url('#') }}"
                        class="flex items-center gap-1
-               text-sm font-medium
+               text-md font-medium
                text-slate-600
                transition
                hover:text-blue-600">
@@ -488,19 +488,19 @@
                </div>
 
 
-               <a href="#industries" class='text-sm font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="#industries" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    Industries
                </a>
 
-               <a href="#integrations" class='text-sm font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="#integrations" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    Integrations
                </a>
 
-               <a href="#pricing" class='text-sm font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="#pricing" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    Pricing
                </a>
 
-               <a href="#resources" class='text-sm font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="#resources" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    Resources
                </a>
 
@@ -511,12 +511,12 @@
            <div class="flex items-center gap-5">
 
                <a href="#"
-                   class='hidden text-sm font-medium text-slate-700 transition hover:text-blue-600 sm:block'>
+                   class='hidden text-md font-medium text-slate-700 transition hover:text-blue-600 sm:block'>
                    Login
                </a>
 
                <a href="#"
-                   class="group inline-flex items-center gap-0 rounded-lg bg-primary-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition duration-200 hover:bg-blue-700 hover:shadow-md">
+                   class="group inline-flex items-center gap-0 rounded-lg bg-primary-600 px-5 py-2.5 text-md font-semibold text-white shadow-sm transition duration-200 hover:bg-blue-700 hover:shadow-md">
                    Start Free Trial
 
                </a>
