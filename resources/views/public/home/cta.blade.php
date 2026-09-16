@@ -4,7 +4,7 @@
            overflow-x-clip
            overflow-y-visible
            bg-background-muted
-           bg-gradient-to-b
+     
            from-white
            via-blue-50/40
            to-blue-100/30

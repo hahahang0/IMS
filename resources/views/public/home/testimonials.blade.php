@@ -114,105 +114,35 @@
 
 @endphp
 
+<section id="testimonials" class="relative overflow-hidden bg-[#06163f] py-24 sm:py-28 lg:py-32">
 
-<section id="testimonials" class="relative overflow-hidden bg-background-muted py-24 sm:py-28 lg:py-32">
 
-
-    {{-- Overall subtle blue tint --}}
+    {{-- Main dark blue background --}}
     <div
-        class="absolute inset-0
+        class="pointer-events-none absolute inset-0
            bg-gradient-to-br
-           from-blue-500/10
-           via-transparent
-           to-indigo-900/30">
+           from-[#071b4d]
+           via-[#0b2d78]
+           to-[#111b5c]">
     </div>
 
-
-    {{-- Bottom dark gradient for readability --}}
+    {{-- Subtle blue glow --}}
     <div
-        class="absolute inset-x-0 bottom-0 h-2/3
-           bg-gradient-to-t
-           from-blue-950/95
-           via-blue-900/45
-           to-transparent">
-    </div>
-
-
-    {{-- Soft blue glow --}}
-    <div
-        class="absolute -bottom-20 -left-20
-           h-64 w-64
+        class="pointer-events-none absolute
+           -left-32 -top-32
+           h-96 w-96
            rounded-full
-           bg-blue-500/30
+           bg-blue-500/20
            blur-3xl">
     </div>
 
-
-    {{-- Soft indigo glow --}}
+    {{-- Subtle indigo glow --}}
     <div
-        class="absolute -right-20 top-10
-           h-56 w-56
+        class="pointer-events-none absolute
+           -right-32 top-0
+           h-96 w-96
            rounded-full
-           bg-indigo-500/20
-           blur-3xl">
-    </div>
-
-
-    {{-- Bottom dark gradient for readability --}}
-    <div
-        class="absolute inset-x-0 bottom-0 h-2/3
-           bg-gradient-to-t
-           from-blue-950/95
-           via-blue-900/45
-           to-transparent">
-    </div>
-
-
-    {{-- Soft blue glow --}}
-    <div
-        class="absolute -bottom-20 -left-20
-           h-64 w-64
-           rounded-full
-           bg-blue-500/30
-           blur-3xl">
-    </div>
-
-
-    {{-- Soft indigo glow --}}
-    <div
-        class="absolute -right-20 top-10
-           h-56 w-56
-           rounded-full
-           bg-indigo-500/20
-           blur-3xl">
-    </div>
-
-    {{-- Bottom dark gradient for readability --}}
-    <div
-        class="absolute inset-x-0 bottom-0 h-2/3
-           bg-gradient-to-t
-           from-primary-950/95
-           via-primary-900/45
-           to-transparent">
-    </div>
-
-
-    {{-- Soft blue glow --}}
-    <div
-        class="absolute -bottom-20 -left-20
-           h-64 w-64
-           rounded-full
-           bg-blue-500/30
-           blur-3xl">
-    </div>
-
-
-    {{-- Soft indigo glow --}}
-    <div
-        class="absolute -right-20 top-10
-           h-56 w-56
-           rounded-full
-           bg-indigo-500/20
+           bg-indigo-500/25
            blur-3xl">
     </div>
 
@@ -247,11 +177,10 @@
 
         {{-- Heading --}}
 
-        <h2
-            class="text-4xl font-bold tracking-tight
-                   text-slate-950
-                   sm:text-5xl
-                   lg:text-6xl">
+        <h2 class="text-4xl font-bold tracking-tight
+       text-white
+       sm:text-5xl
+       lg:text-6xl">
 
             Real stories,
 
@@ -266,12 +195,12 @@
 
         <p
             class="mx-auto mt-6 max-w-2xl
-                   text-base leading-7 text-slate-500
+                   text-base leading-7 text-slate-300
                    sm:text-lg sm:leading-8">
             See how growing businesses use StockCore to simplify
             inventory management, reduce manual work, and stay in control.
         </p>
-
+        
     </div>
 
 
@@ -344,7 +273,8 @@
 
                             {{-- IMAGE --}}
 
-                            <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}" loading='lazy'
+                            <img src="{{ asset($testimonial['image']) }}" alt="{{ $testimonial['name'] }}"
+                                loading='lazy'
                                 class="absolute inset-0
            h-full w-full
            object-cover

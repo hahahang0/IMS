@@ -488,7 +488,7 @@
                </div>
 
 
-               <a href="#industries" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="{{ route('public.industries') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    Industries
                </a>
 
@@ -502,6 +502,9 @@
 
                <a href="#resources" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    Resources
+               </a>
+                  <a href="{{ route('public.about_us') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+                   About
                </a>
 
            </div>

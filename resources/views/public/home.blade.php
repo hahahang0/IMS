@@ -1,4 +1,4 @@
-@extends('public.layouts.app')
+@extends('layouts.public')
 @section('title','StockCore')
 @section('content')
 <main>
@@ -9,7 +9,7 @@
    @include('public.home.how-it-works2')
    @include('public.home.use-cases')
    @include('public.home.pricing')
-   @include('public.home.testinomials')
+   @include('public.home.testimonials')
    @include('public.home.cta')
 </main>
 @endsection

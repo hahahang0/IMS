@@ -37,4 +37,14 @@
 
     --color-background: #f8fbff;
     --color-background-muted: #f1f7ff;
+
+    /* Admin */ 
+    --color-admin-sidebar: #0b1220;
+     --color-admin-sidebar-hover: #151f32;
+      --color-admin-sidebar-border: #1e293b;
+       --color-admin-surface: #ffffff;
+        --color-admin-background: #f6f8fc;
+         --color-admin-border: #e5eaf1;
+          --color-admin-text: #0f172a;
+           --color-admin-text-muted: #64748b;
 }
