@@ -492,19 +492,22 @@
                    Industries
                </a>
 
-               <a href="#integrations" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+               {{-- <a href="#integrations" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    Integrations
-               </a>
+               </a> --}}
 
-               <a href="#pricing" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="{{ route('public.pricing') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    Pricing
                </a>
 
-               <a href="#resources" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
-                   Resources
+               <a href="#blog" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+                   blog
                </a>
                   <a href="{{ route('public.about_us') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    About
+               </a>
+                 <a href="{{ route('public.contact') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+                   Contact
                </a>
 
            </div>

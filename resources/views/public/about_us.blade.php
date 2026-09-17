@@ -10,7 +10,7 @@
     @include('public.about_us.philosophy')
     @include('public.about_us.team')
     @include('public.about_us.values')
-    @include('public.about_us.footer')
+    @include('public.about_us.contact')
     @include('public.about_us.cta')
 
 

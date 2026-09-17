@@ -22,6 +22,14 @@ Route::get('/about_us', function () {
     return view('public.about_us');
 })->name('public.about_us');
 
+Route::get('/pricing', function () {
+    return view('public.pricing');
+})->name('public.pricing');
+
+Route::get('/contact', function () {
+    return view('public.contact');
+})->name('public.contact');
+
 Route::prefix('admin')->group(function () {
     Route::get('/login', [AuthController::class, 'showLogin'])->name('admin.login');
     Route::post('/login', [AuthController::class, 'login'])->name('admin.login.submit');
