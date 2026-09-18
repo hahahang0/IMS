@@ -29,6 +29,38 @@ Route::get('/pricing', function () {
 Route::get('/contact', function () {
     return view('public.contact');
 })->name('public.contact');
+Route::get('/faq', function () {
+    return view('public.faq');
+})->name('public.faq');
+Route::get('/demo', function () {
+    return view('public.demo');
+})->name('public.demo');
+
+Route::get('/integrations', function () {
+    return view('public.integrations');
+})->name('public.integrations');
+
+Route::get('/blog', function () {
+    return view('public.blog');
+})->name('public.blog');
+
+Route::get('/support', function () {
+    return view('public.support');
+})->name('public.support');
+
+Route::get('/terms', function () {
+    return view('public.terms');
+})->name('public.terms');
+
+Route::get('/privacy', function () {
+    return view('public.privacy');
+})->name('public.privacy');
+
+
+
+
+
+
 
 Route::prefix('admin')->group(function () {
     Route::get('/login', [AuthController::class, 'showLogin'])->name('admin.login');

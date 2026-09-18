@@ -5,6 +5,8 @@
 {{-- <h1>Hello this is industries page. </h1>
  --}}
     @include('public.contact.hero')
+    @include('public.contact.business-details')
+    @include('public.contact.support-faq')
     @include('public.contact.form')
  
   

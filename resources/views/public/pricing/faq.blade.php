@@ -250,34 +250,72 @@
 
         {{-- header --}}
 
+        {{-- header --}}
         <div class="mx-auto max-w-3xl text-center">
 
-            <p
-                class="text-[11px] font-bold uppercase
-                       tracking-[0.25em]
-                       text-primary-600">
+            <p class="text-[11px] font-bold uppercase
+               tracking-[0.25em]
+               text-primary-600">
                 Billing FAQ
             </p>
 
-
             <h2
                 class="mt-4
-                       text-4xl font-extrabold
-                       tracking-[-0.045em]
-                       text-secondary-950
-                       sm:text-5xl">
+               text-4xl font-extrabold
+               tracking-[-0.045em]
+               text-secondary-950
+               sm:text-5xl">
                 Frequently asked questions
             </h2>
 
-
             <p
                 class="mx-auto mt-5 max-w-2xl
-                       text-base leading-7
-                       text-secondary-600
-                       sm:text-lg">
+               text-base leading-7
+               text-secondary-600
+               sm:text-lg">
                 Find answers about pricing, billing and managing
                 your StockCore plan.
             </p>
+
+
+            {{-- Full FAQ link --}}
+            <div class="mt-6 flex justify-center">
+
+                <a href="{{ url('/faq') }}"
+                    class="group inline-flex items-center gap-2
+                   text-sm font-semibold
+                   text-primary-600
+                   transition duration-200
+                   hover:text-primary-700">
+
+                    <span>
+                        Looking for something else?
+                    </span>
+
+                    <span
+                        class="inline-flex items-center gap-1
+                       border-b border-primary-200
+                       pb-0.5
+                       transition duration-200
+                       group-hover:border-primary-600">
+
+                        Explore all FAQs
+
+                        <svg class="h-4 w-4
+                           transition-transform duration-200
+                           group-hover:translate-x-1"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            aria-hidden="true">
+
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5" />
+
+                        </svg>
+
+                    </span>
+
+                </a>
+
+            </div>
 
         </div>
 
@@ -491,7 +529,8 @@
 
                                             <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"
                                                 stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 9l6 6 6-6" />
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M6 9l6 6 6-6" />
                                             </svg>
 
                                         </span>
@@ -731,9 +770,9 @@
 
 
             /*
-             FAQ CATEGORY SWITCHING
-         
-                */
+                 FAQ CATEGORY SWITCHING
+             
+                    */
 
             $('#pricing-faq .faq-category')
                 .on('click', function() {
@@ -747,10 +786,10 @@
 
 
                     /*
-                    
-                         Sidebar Active State
-              
-                        */
+                        
+                             Sidebar Active State
+                  
+                            */
 
                     $('#pricing-faq .faq-category')
                         .removeClass('is-active bg-primary-50');
@@ -831,10 +870,10 @@
 
 
                     /*
-                  
-                         Reset category accordion,First question opens automatically.
-                        
-                        */
+                      
+                             Reset category accordion,First question opens automatically.
+                            
+                            */
 
                     $panel
                         .find('.faq-question')
