@@ -70,7 +70,7 @@
 
 
                                {{-- Landing Cost --}}
-                               <a href="{{ url('#') }}"
+                               <a href="{{ route('public.features.landing-cost') }}"
                                    class="group/item flex gap-4
                            rounded-lg
                            py-3
@@ -122,7 +122,7 @@
 
 
                                {{-- Scan & Import --}}
-                               <a href="{{ url('#') }}"
+                               <a href="{{ route('public.features.scan-import') }}"
                                    class="group/item flex gap-4
                            rounded-lg
                            py-3
@@ -172,7 +172,7 @@
 
 
                                {{-- Stock Tracking --}}
-                               <a href="{{ url('#') }}"
+                               <a href="{{ route('public.features.stock-tracking') }}"
                                    class="group/item flex gap-4
                            rounded-lg
                            py-3
@@ -230,7 +230,7 @@
 
 
                                {{-- Features overview --}}
-                               <a href="{{ url('#') }}"
+                               <a href="{{ route('public.features') }}"
                                    class="group/item flex gap-4
                            rounded-lg
                            py-3
@@ -293,7 +293,7 @@
 
 
                                {{-- Serial / Expiry --}}
-                               <a href="{{ url('#') }}"
+                               <a href="{{ route('public.features.serial-expiry-tracking') }}"
                                    class="group/item flex gap-4
                            rounded-lg
                            py-3
@@ -338,7 +338,7 @@
 
 
                                {{-- FIFO --}}
-                               <a href="{{ url('#') }}"
+                               <a href="{{ route('public.features.fifo') }}"
                                    class="group/item flex gap-4
                            rounded-lg
                            py-3
@@ -383,7 +383,7 @@
 
 
                                {{-- Packeting --}}
-                               <a href="{{ url('#') }}"
+                               <a href="{{ route('public.features.packeting') }}"
                                    class="group/item flex gap-4
                            rounded-lg
                            py-3
@@ -435,7 +435,7 @@
 
 
                                {{-- Integrations --}}
-                               <a href="{{ url('/') }}"
+                               <a href="{{ route('public.integrations') }}"
                                    class="group/item flex gap-4
                            rounded-lg
                            py-3
@@ -500,7 +500,7 @@
                    Pricing
                </a>
 
-               <a href="#blog" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="{{ route('public.blog') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    blog
                </a>
                   <a href="{{ route('public.about_us') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
@@ -516,12 +516,12 @@
            {{-- login and start-trail buttons --}}
            <div class="flex items-center gap-5">
 
-               <a href="#"
+               <a href="{{route('public.auth.login')}}"
                    class='hidden text-md font-medium text-slate-700 transition hover:text-blue-600 sm:block'>
                    Login
                </a>
 
-               <a href="#"
+               <a href="{{route('public.auth.signup')}}"
                    class="group inline-flex items-center gap-0 rounded-lg bg-primary-600 px-5 py-2.5 text-md font-semibold text-white shadow-sm transition duration-200 hover:bg-blue-700 hover:shadow-md">
                    Start Free Trial
 

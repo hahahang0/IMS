@@ -255,7 +255,7 @@
 
                 <div class="relative z-10 ml-auto w-full max-w-[680px]">
 
-                    <img src="{{ asset('images/company_assets/cta-dashboard.webp') }}" alt="StockCore dashboard preview"
+                    <img src="{{ asset('images/industries/stockcore-dashboard-image.webp') }}" alt="StockCore dashboard preview"
                         class="w-full rounded-[1.6rem] object-cover drop-shadow-[0_35px_90px_rgba(37,99,235,.28)]">
 
                 </div>

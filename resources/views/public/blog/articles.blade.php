@@ -637,7 +637,7 @@
 
 
                 {{-- VIEW ALL ARTICLES --}}
-                <a href="{{ url('/blog/articles') }}"
+                <a href="{{ url('/blog') }}"
                     class="group
                    inline-flex
                    items-center

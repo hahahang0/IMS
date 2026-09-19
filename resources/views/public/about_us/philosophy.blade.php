@@ -218,7 +218,7 @@
                         {{-- Mountain image --}}
                         <div class="relative overflow-hidden">
 
-                            <img src="{{ asset('images/about/philosophy-mountain.webp') }}"
+                            <img src="{{ asset('images/about/philosophy_mountain.webp') }}"
                                 alt="Mountain landscape representing long-term progress"
                                 class="h-full w-full object-cover">
 
@@ -284,9 +284,9 @@
 
                 <div
                     class="absolute left-0 right-0 top-[280px]
-                           h-[390px] overflow-hidden bg-secondary-100">
+                           h-[390px] overflow-hidden bg-secondary-100 mt-15">
 
-                    <img src="{{ asset('images/about/philosophy-dashboard.webp') }}" alt="StockCore inventory dashboard"
+                    <img src="{{ asset('images/about/stockcore-inventory-dashboard.webp') }}" alt="StockCore inventory dashboard"
                         class="h-full w-full object-cover">
 
                 </div>

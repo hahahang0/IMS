@@ -56,6 +56,46 @@ Route::get('/privacy', function () {
     return view('public.privacy');
 })->name('public.privacy');
 
+Route::get('/signup', function () {
+    return view('public.auth.signup');
+})->name('public.auth.signup');
+
+
+Route::get('/login', function () {
+    return view('public.auth.login');
+})->name('public.auth.login');
+
+
+Route::get('/features', function () {
+    return view('public.features');
+})->name('public.features');
+
+
+
+Route::prefix('features')
+    ->name('public.features.')
+    ->group(function () {
+
+        Route::view('/landing-cost', 'public.features.landing-cost')
+            ->name('landing-cost');
+
+        Route::view('/scan-import', 'public.features.scan-import')
+            ->name('scan-import');
+
+        Route::view('/stock-tracking', 'public.features.stock-tracking')
+            ->name('stock-tracking');
+
+        Route::view('/serial-expiry-tracking', 'public.features.serial-expiry-tracking')
+            ->name('serial-expiry-tracking');
+
+        Route::view('/fifo', 'public.features.fifo')
+            ->name('fifo');
+
+        Route::view('/packeting', 'public.features.packeting')
+            ->name('packeting');
+    });
+
+
 
 
 

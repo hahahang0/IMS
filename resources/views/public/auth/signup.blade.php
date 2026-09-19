@@ -1,0 +1,1352 @@
+@extends('layouts.guest')
+
+@section('title', 'Start Free Trial | StockCore')
+
+@section('content')
+
+    @php
+
+        /*
+    |--------------------------------------------------------------------------
+    | Selected Plan
+    |--------------------------------------------------------------------------
+    |
+    | Examples:
+    |
+    | /signup?plan=starter
+    | /signup?plan=growth
+    | /signup?plan=enterprise
+    |
+    */
+
+        $selectedPlan = strtolower(request('plan', 'starter'));
+
+        $allowedPlans = ['starter', 'growth', 'enterprise'];
+
+        if (!in_array($selectedPlan, $allowedPlans)) {
+            $selectedPlan = 'starter';
+        }
+
+    @endphp
+
+
+    <div
+        class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-slate-50
+           px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
+
+        <div class="mx-auto w-full max-w-[1180px]">
+
+
+            {{-- top header --}}
+
+            <div class="mb-5 flex items-center justify-between">
+
+                {{-- Logo --}}
+                <a href="/" class="flex h-full items-center">
+                    <img src="{{ asset('images/company_assets/cropped_logo.webp') }}" alt="Company Logo"
+                        class="h-12 w-auto object-contain">
+                </a>
+
+
+                {{-- Login --}}
+                <div class="flex items-center gap-3">
+
+                    <span class="hidden text-sm text-slate-500 sm:block">
+                        Already have an account?
+                    </span>
+
+
+                    <a href="{{ route('public.auth.login') }}"
+                        class="inline-flex items-center gap-2
+                           rounded-xl border border-blue-200
+                           bg-white px-4 py-2
+                           text-sm font-semibold text-blue-600
+                           shadow-sm transition duration-200
+                           hover:border-blue-300 hover:bg-blue-50">
+
+                        Log in
+
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5" />
+                        </svg>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            {{-- main signup card --}}
+
+            <div
+                class="overflow-hidden rounded-[26px]
+                   border border-slate-200/80
+                   bg-white
+                   shadow-[0_25px_70px_rgba(15,23,42,0.10)]
+                   lg:grid lg:grid-cols-[0.90fr_1.35fr]">
+
+
+                {{-- left panel --}}
+                <div
+                    class="relative overflow-hidden
+                       bg-[#0c172b]
+                       px-8 py-10 text-white
+                       sm:px-10
+                       lg:px-11 lg:py-12">
+
+                    {{-- Background Glow --}}
+                    <div
+                        class="pointer-events-none absolute
+                           -right-20 top-40
+                           h-72 w-72
+                           rounded-full
+                           bg-blue-600/10
+                           blur-[70px]">
+                    </div>
+
+
+                    {{-- Decorative Rings --}}
+                    <div
+                        class="pointer-events-none absolute
+                           -right-32 top-40
+                           h-80 w-80
+                           rounded-full
+                           border border-blue-500/10">
+                    </div>
+
+                    <div
+                        class="pointer-events-none absolute
+                           -right-20 top-52
+                           h-72 w-72
+                           rounded-full
+                           border border-blue-500/20">
+                    </div>
+
+                    <div
+                        class="pointer-events-none absolute
+                           -right-8 top-64
+                           h-64 w-64
+                           rounded-full
+                           border border-blue-500/20">
+                    </div>
+
+
+
+                    <div class="relative z-10">
+
+
+                        {{-- Trial Badge --}}
+                        <div
+                            class="inline-flex items-center gap-2
+                               rounded-full
+                               border border-blue-500/60
+                               bg-blue-500/10
+                               px-4 py-2
+                               text-xs font-semibold
+                               text-blue-100">
+
+                            <span class="text-yellow-400">
+                                ⚡
+                            </span>
+
+                            14-Day Unrestricted Free Trial
+
+                        </div>
+
+
+
+                        {{-- Heading --}}
+                        <h1
+                            class="mt-7 max-w-sm
+                               text-3xl font-bold
+                               leading-[1.15]
+                               tracking-tight
+                               text-white
+                               sm:text-4xl">
+                            Take full control of your warehouse inventory today.
+                        </h1>
+
+
+
+                        {{-- Description --}}
+                        <p
+                            class="mt-5 max-w-md
+                               text-sm leading-6
+                               text-slate-300">
+                            Join Australian businesses using StockCore to synchronize
+                            stock levels, purchase orders and sales channels effortlessly.
+                        </p>
+
+
+                        {{-- benefits --}}
+
+                        <div class="mt-8 space-y-5">
+
+
+                            {{-- Benefit 1 --}}
+                            <div class="flex items-start gap-3">
+
+                                <div
+                                    class="mt-0.5 flex h-6 w-6
+                                       shrink-0 items-center justify-center
+                                       rounded-full
+                                       bg-emerald-500/20
+                                       text-emerald-300">
+
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5 12 4 4L19 6" />
+                                    </svg>
+
+                                </div>
+
+                                <p
+                                    class="text-sm font-semibold
+                                       leading-6 text-slate-100">
+                                    No credit card required upfront
+                                </p>
+
+                            </div>
+
+
+
+                            {{-- Benefit 2 --}}
+                            <div class="flex items-start gap-3">
+
+                                <div
+                                    class="mt-0.5 flex h-6 w-6
+                                       shrink-0 items-center justify-center
+                                       rounded-full
+                                       bg-emerald-500/20
+                                       text-emerald-300">
+
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5 12 4 4L19 6" />
+                                    </svg>
+
+                                </div>
+
+                                <p
+                                    class="text-sm font-semibold
+                                       leading-6 text-slate-100">
+                                    Unlimited SKU barcode scanning & barcode labels
+                                </p>
+
+                            </div>
+
+
+
+                            {{-- Benefit 3 --}}
+                            <div class="flex items-start gap-3">
+
+                                <div
+                                    class="mt-0.5 flex h-6 w-6
+                                       shrink-0 items-center justify-center
+                                       rounded-full
+                                       bg-emerald-500/20
+                                       text-emerald-300">
+
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5 12 4 4L19 6" />
+                                    </svg>
+
+                                </div>
+
+                                <p
+                                    class="text-sm font-semibold
+                                       leading-6 text-slate-100">
+                                    Automated Shopify, Xero & WooCommerce sync
+                                </p>
+
+                            </div>
+
+
+
+                            {{-- Benefit 4 --}}
+                            <div class="flex items-start gap-3">
+
+                                <div
+                                    class="mt-0.5 flex h-6 w-6
+                                       shrink-0 items-center justify-center
+                                       rounded-full
+                                       bg-emerald-500/20
+                                       text-emerald-300">
+
+                                    <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="3">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="m5 12 4 4L19 6" />
+                                    </svg>
+
+                                </div>
+
+                                <p
+                                    class="text-sm font-semibold
+                                       leading-6 text-slate-100">
+                                    Real-time low stock & demand forecasting
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        {{-- Divider --}}
+                        <div class="my-8 h-px bg-white/10"></div>
+
+
+
+                        {{-- testimonials --}}
+
+                        <div
+                            class="rounded-2xl
+                               border border-blue-400/25
+                               bg-white/[0.05]
+                               p-5
+                               backdrop-blur-sm">
+
+                            <div class="flex flex-wrap items-center gap-3">
+
+                                <div class="flex gap-1 text-yellow-400">
+
+                                    @for ($i = 0; $i < 5; $i++)
+                                        <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.071
+                                                            3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371
+                                                            1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364
+                                                            1.118l1.07 3.292c.3.922-.755 1.688-1.538
+                                                            1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8
+                                                            2.034c-.783.57-1.838-.196-1.538-1.118l1.07-3.292
+                                                            a1 1 0 0 0-.364-1.118L2.98 8.72c-.783-.57-.38-1.81
+                                                            .588-1.81H7.03a1 1 0 0 0 .951-.69l1.07-3.292Z" />
+                                        </svg>
+                                    @endfor
+
+                                </div>
+
+
+                                <span class="text-sm font-semibold text-white">
+                                    4.9 / 5 Rating
+                                </span>
+
+                            </div>
+
+
+
+                            <blockquote
+                                class="mt-4 text-sm italic
+                                   leading-6 text-slate-200">
+                                “StockCore reduced our stockouts and gave our team
+                                significantly better visibility over warehouse inventory.”
+                            </blockquote>
+
+
+                            <p class="mt-3 text-xs text-slate-400">
+                                — Operations Manager, Australian Distribution Business
+                            </p>
+
+                        </div>
+
+
+
+                        {{-- security badeges --}}
+
+                        <div class="mt-5 grid grid-cols-3 gap-2">
+
+
+                            {{-- ISO --}}
+                            <div
+                                class="rounded-xl
+                                   border border-blue-400/20
+                                   bg-white/[0.04]
+                                   p-3">
+
+                                <svg class="mb-2 h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="1.8">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3 4.5 6v5.25c0 4.55 3.08 8.78 7.5
+                                                    9.75 4.42-.97 7.5-5.2 7.5-9.75V6L12 3Z" />
+
+                                </svg>
+
+
+                                <p class="text-[10px] font-semibold text-white">
+                                    ISO 27001
+                                </p>
+
+                                <p class="mt-1 text-[8px] text-slate-400">
+                                    Certified
+                                </p>
+
+                            </div>
+
+
+
+                            {{-- Privacy --}}
+                            <div
+                                class="rounded-xl
+                                   border border-blue-400/20
+                                   bg-white/[0.04]
+                                   p-3">
+
+                                <svg class="mb-2 h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="1.8">
+
+                                    <rect x="5" y="10" width="14" height="10" rx="2" />
+
+                                    <path stroke-linecap="round" d="M8 10V7a4 4 0 0 1 8 0v3" />
+
+                                </svg>
+
+
+                                <p class="text-[10px] font-semibold text-white">
+                                    Data Private
+                                </p>
+
+                                <p class="mt-1 text-[8px] text-slate-400">
+                                    Secure data
+                                </p>
+
+                            </div>
+
+
+
+                            {{-- SSL --}}
+                            <div
+                                class="rounded-xl
+                                   border border-blue-400/20
+                                   bg-white/[0.04]
+                                   p-3">
+
+                                <svg class="mb-2 h-5 w-5 text-blue-400" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor" stroke-width="1.8">
+
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m4 7 8-4 8 4-8 4-8-4Zm0 5 8 4 8-4M4 17l8 4 8-4" />
+
+                                </svg>
+
+
+                                <p class="text-[10px] font-semibold text-white">
+                                    256-bit SSL
+                                </p>
+
+                                <p class="mt-1 text-[8px] text-slate-400">
+                                    Encrypted
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                {{-- right panel --}}
+
+                <div class="px-7 py-10
+                       sm:px-10
+                       lg:px-11 lg:py-12">
+
+
+                    {{-- Heading --}}
+                    <div>
+
+                        <h2
+                            class="text-2xl font-bold
+                               tracking-tight
+                               text-slate-900
+                               sm:text-3xl">
+                            Create your account
+                        </h2>
+
+                        <p class="mt-2 text-sm text-slate-500">
+                            Get started in less than 60 seconds. Cancel anytime.
+                        </p>
+
+                    </div>
+
+
+
+                    {{-- signup form  --}}
+
+                    <form method="POST" action="#" class="mt-6">
+
+                        @csrf
+
+
+                        {{-- Selected Plan --}}
+                        <input type="hidden" name="plan" id="selected-plan"
+                            value="{{ old('plan', $selectedPlan) }}">
+
+
+
+                        {{-- plan selector --}}
+
+                        <div
+                            class="rounded-2xl
+                               border border-slate-200
+                               bg-slate-50/80
+                               p-3">
+
+                            <div
+                                class="mb-3 flex flex-wrap
+                                   items-center justify-between
+                                   gap-2">
+
+                                <p
+                                    class="text-[10px] font-bold
+                                       uppercase tracking-[0.1em]
+                                       text-slate-500">
+                                    Selected plan trial
+                                </p>
+
+
+                                <span id="selected-plan-label"
+                                    class="rounded-full
+                                       bg-blue-100
+                                       px-3 py-1
+                                       text-[9px] font-bold
+                                       uppercase
+                                       text-blue-700">
+                                    Starter Trial — Up to 500 SKUs
+                                </span>
+
+                            </div>
+
+
+
+                            <div
+                                class="grid grid-cols-3
+                                   rounded-xl
+                                   bg-slate-200/70
+                                   p-1">
+
+
+                                {{-- Starter --}}
+                                <button type="button" data-plan="starter" data-label="Starter Trial — Up to 500 SKUs"
+                                    class="plan-button
+                                       rounded-lg
+                                       px-2 py-2.5
+                                       text-xs font-semibold
+                                       transition
+
+                                       {{ $selectedPlan === 'starter' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-600 hover:text-slate-900' }}
+                                        hover:cursor-pointer">
+                                    Starter
+                                </button>
+
+
+
+                                {{-- Growth --}}
+                                <button type="button" data-plan="growth" data-label="Pro / Growth Trial"
+                                    class="plan-button
+                                       rounded-lg
+                                       px-2 py-2.5
+                                       text-xs font-semibold
+                                       transition
+
+                                       {{ $selectedPlan === 'growth' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-600 hover:text-slate-900' }}
+                                        hover:cursor-pointer">
+                                    Pro / Growth
+                                </button>
+
+
+
+                                {{-- Enterprise --}}
+                                <button type="button" data-plan="enterprise" data-label="Enterprise Trial"
+                                    class="plan-button
+                                       rounded-lg
+                                       px-2 py-2.5
+                                       text-xs font-semibold
+                                       transition
+
+                                       {{ $selectedPlan === 'enterprise' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-600 hover:text-slate-900' }}
+                                        hover:cursor-pointer">
+                                    Enterprise
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+
+                        {{-- social sign in  --}}
+
+                        <div class="mt-5 grid gap-3 sm:grid-cols-2">
+
+
+                            {{-- Google --}}
+                            <a href="#"
+                                class="flex h-11
+                                   items-center justify-center
+                                   gap-3 rounded-xl
+                                   border border-slate-200
+                                   bg-white
+                                   text-sm font-semibold
+                                   text-slate-700
+                                   shadow-sm transition
+                                   hover:border-blue-200
+                                   hover:bg-blue-50">
+
+                                <svg class="h-5 w-5" viewBox="0 0 24 24">
+
+                                    <path fill="#4285F4"
+                                        d="M21.35 12.18c0-.7-.06-1.2-.2-1.73H12v3.31h5.37c-.11.82-.7 2.06-2.02 2.89l-.02.11 2.93 2.27.2.02c1.84-1.7 2.89-4.2 2.89-6.87Z" />
+
+                                    <path fill="#34A853"
+                                        d="M12 21.7c2.63 0 4.84-.87 6.45-2.36l-3.11-2.4c-.83.56-1.94.95-3.34.95-2.53 0-4.68-1.7-5.45-4.07l-.1.01-3.05 2.36-.04.1A9.74 9.74 0 0 0 12 21.7Z" />
+
+                                    <path fill="#FBBC05"
+                                        d="M6.55 13.82A5.86 5.86 0 0 1 6.23 12c0-.63.11-1.24.3-1.82l-.01-.12-3.09-2.4-.1.05A9.7 9.7 0 0 0 2.3 12c0 1.55.37 3.01 1.03 4.29l3.22-2.47Z" />
+
+                                    <path fill="#EA4335"
+                                        d="M12 6.11c1.83 0 3.06.79 3.76 1.45l2.76-2.69C16.83 3.3 14.63 2.3 12 2.3a9.74 9.74 0 0 0-8.67 5.41l3.2 2.47C7.32 7.81 9.47 6.11 12 6.11Z" />
+
+                                </svg>
+
+                                Google Sign In
+
+                            </a>
+
+
+
+                            {{-- Microsoft --}}
+                            <a href="#"
+                                class="flex h-11
+                                   items-center justify-center
+                                   gap-3 rounded-xl
+                                   border border-slate-200
+                                   bg-white
+                                   text-sm font-semibold
+                                   text-slate-700
+                                   shadow-sm transition
+                                   hover:border-blue-200
+                                   hover:bg-blue-50">
+
+                                <div
+                                    class="grid h-4 w-4
+                                       grid-cols-2
+                                       gap-[1px]">
+
+                                    <span class="bg-[#f35325]"></span>
+                                    <span class="bg-[#81bc06]"></span>
+                                    <span class="bg-[#05a6f0]"></span>
+                                    <span class="bg-[#ffba08]"></span>
+
+                                </div>
+
+                                Microsoft SSO
+
+                            </a>
+
+                        </div>
+
+
+
+                        {{-- divider --}}
+
+                        <div class="my-5 flex items-center gap-4">
+
+                            <div class="h-px flex-1 bg-slate-200"></div>
+
+                            <span
+                                class="text-[9px]
+                                   font-semibold uppercase
+                                   tracking-wider
+                                   text-slate-400">
+                                Or sign up with email
+                            </span>
+
+                            <div class="h-px flex-1 bg-slate-200"></div>
+
+                        </div>
+
+
+                        {{-- errors --}}
+
+                        @if ($errors->any())
+
+                            <div
+                                class="mb-5 rounded-xl
+                                   border border-red-200
+                                   bg-red-50
+                                   p-4">
+
+                                <ul class="space-y-1 text-sm text-red-600">
+
+                                    @foreach ($errors->all() as $error)
+                                        <li>
+                                            {{ $error }}
+                                        </li>
+                                    @endforeach
+
+                                </ul>
+
+                            </div>
+
+                        @endif
+
+
+
+                        {{-- form fields --}}
+
+                        <div class="grid gap-4 sm:grid-cols-2">
+
+
+                            {{-- Full Name --}}
+                            <div>
+
+                                <label for="name"
+                                    class="mb-1.5 block
+                                       text-xs font-semibold
+                                       text-slate-700">
+                                    Full Name
+
+                                    <span class="text-red-500">
+                                        *
+                                    </span>
+                                </label>
+
+
+                                <input id="name" type="text" name="name" value="{{ old('name') }}"
+                                    placeholder="e.g. Sarah Jenkins" required autocomplete="name"
+                                    class="w-full rounded-xl
+                                       border border-slate-200
+                                       bg-slate-50
+                                       px-4 py-3
+                                       text-sm text-slate-800
+                                       outline-none transition
+                                       placeholder:text-slate-400
+
+                                       focus:border-blue-500
+                                       focus:bg-white
+                                       focus:ring-4
+                                       focus:ring-blue-500/10">
+
+                            </div>
+
+
+
+                            {{-- Business Name --}}
+                            <div>
+
+                                <label for="business_name"
+                                    class="mb-1.5 block
+                                       text-xs font-semibold
+                                       text-slate-700">
+                                    Company / Business Name
+
+                                    <span class="text-red-500">
+                                        *
+                                    </span>
+                                </label>
+
+
+                                <input id="business_name" type="text" name="business_name"
+                                    value="{{ old('business_name') }}" placeholder="e.g. Apex Logistics Ltd" required
+                                    autocomplete="organization"
+                                    class="w-full rounded-xl
+                                       border border-slate-200
+                                       bg-slate-50
+                                       px-4 py-3
+                                       text-sm text-slate-800
+                                       outline-none transition
+                                       placeholder:text-slate-400
+
+                                       focus:border-blue-500
+                                       focus:bg-white
+                                       focus:ring-4
+                                       focus:ring-blue-500/10">
+
+                            </div>
+
+
+
+                            {{-- Email --}}
+                            <div>
+
+                                <label for="email"
+                                    class="mb-1.5 block
+                                       text-xs font-semibold
+                                       text-slate-700">
+                                    Work Email
+
+                                    <span class="text-red-500">
+                                        *
+                                    </span>
+                                </label>
+
+
+                                <input id="email" type="email" name="email" value="{{ old('email') }}"
+                                    placeholder="you@company.com" required autocomplete="email"
+                                    class="w-full rounded-xl
+                                       border border-slate-200
+                                       bg-slate-50
+                                       px-4 py-3
+                                       text-sm text-slate-800
+                                       outline-none transition
+                                       placeholder:text-slate-400
+
+                                       focus:border-blue-500
+                                       focus:bg-white
+                                       focus:ring-4
+                                       focus:ring-blue-500/10">
+
+                            </div>
+
+
+
+                            {{-- Phone --}}
+                            <div>
+
+                                <label for="phone"
+                                    class="mb-1.5 block
+                                       text-xs font-semibold
+                                       text-slate-700">
+                                    Phone Number
+
+                                    <span class="font-normal text-slate-400">
+                                        (Optional)
+                                    </span>
+                                </label>
+
+
+                                <div class="flex">
+
+                                    <div
+                                        class="flex items-center
+                                           rounded-l-xl
+                                           border border-r-0
+                                           border-slate-200
+                                           bg-slate-50
+                                           px-3
+                                           text-xs font-medium
+                                           text-slate-600">
+                                        +61
+                                    </div>
+
+
+                                    <input id="phone" type="tel" name="phone" value="{{ old('phone') }}"
+                                        placeholder="400 000 000" autocomplete="tel"
+                                        class="min-w-0 flex-1
+                                           rounded-r-xl
+                                           border border-slate-200
+                                           bg-slate-50
+                                           px-4 py-3
+                                           text-sm text-slate-800
+                                           outline-none transition
+                                           placeholder:text-slate-400
+
+                                           focus:border-blue-500
+                                           focus:bg-white
+                                           focus:ring-4
+                                           focus:ring-blue-500/10">
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        {{-- passwords --}}
+
+                        <div class="mt-4">
+
+                            <label for="password"
+                                class="mb-1.5 block
+                                   text-xs font-semibold
+                                   text-slate-700">
+                                Create Password
+
+                                <span class="text-red-500">
+                                    *
+                                </span>
+                            </label>
+
+
+                            <div class="relative">
+
+                                <input id="password" type="password" name="password" required minlength="8"
+                                    autocomplete="new-password" placeholder="At least 8 characters"
+                                    class="w-full rounded-xl
+                                       border border-slate-200
+                                       bg-slate-50
+                                       px-4 py-3 pr-12
+                                       text-sm text-slate-800
+                                       outline-none transition
+                                       placeholder:text-slate-400
+
+                                       focus:border-blue-500
+                                       focus:bg-white
+                                       focus:ring-4
+                                       focus:ring-blue-500/10">
+
+
+                                {{-- Password visibility --}}
+                                <button type="button" id="toggle-password"
+                                    class="absolute right-4 top-1/2
+                                       -translate-y-1/2
+                                       text-slate-400
+                                       transition
+                                       hover:text-slate-600">
+
+                                    <svg class="h-5 w-5 hover:cursor-pointer" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor" stroke-width="1.8">
+
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12s3.75-6 9.75-6
+                                                        9.75 6 9.75 6-3.75
+                                                        6-9.75 6S2.25 12 2.25 12Z" />
+
+                                        <circle cx="12" cy="12" r="2.5" />
+
+                                    </svg>
+
+                                </button>
+
+                            </div>
+
+
+
+                            {{-- Password strength --}}
+                            <div class="mt-2">
+
+                                <div
+                                    class="h-1.5
+                                       overflow-hidden
+                                       rounded-full
+                                       bg-slate-200">
+
+                                    <div id="password-strength-bar"
+                                        class="h-full w-0
+                                           rounded-full
+                                           transition-all
+                                           duration-300">
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mt-1 flex justify-end">
+
+                                    <span id="password-strength-text"
+                                        class="text-[10px]
+                                           font-medium
+                                           text-slate-400">
+                                        Enter a password
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        {{-- terms --}}
+
+                        <div class="mt-5">
+
+                            <label class="flex cursor-pointer
+                                   items-start gap-3">
+
+                                <input type="checkbox" name="terms" value="1" required
+                                    class="mt-0.5 h-4 w-4
+                                       rounded
+                                       border-slate-300
+                                       text-blue-600
+                                       focus:ring-blue-500">
+
+
+                                <span class="text-xs leading-5
+                                       text-slate-500">
+
+                                    I agree to StockCore's
+
+                                    <a href="#"
+                                        class="font-semibold
+                                           text-blue-600
+                                           hover:underline">
+                                        Terms of Service
+                                    </a>
+
+                                    and
+
+                                    <a href="#"
+                                        class="font-semibold
+                                           text-blue-600
+                                           hover:underline">
+                                        Privacy Policy
+                                    </a>.
+
+                                </span>
+
+                            </label>
+
+                        </div>
+
+
+
+                        {{-- submit --}}
+
+                        <button type="submit"
+                            class="mt-5 flex w-full
+                               items-center justify-center
+                               gap-2 rounded-xl
+                               bg-blue-600
+                               px-5 py-3.5
+                               text-sm font-bold
+                               text-white
+                               shadow-lg
+                               shadow-blue-600/20
+                               transition duration-200
+
+                               hover:-translate-y-0.5
+                               hover:bg-blue-700
+                               hover:shadow-xl
+                               hover:shadow-blue-600/25
+                               hover:cursor-pointer">
+
+                            Start 14-Day Free Trial
+
+                            <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="2.2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-5-5 5 5-5 5" />
+                            </svg>
+
+                        </button>
+
+
+
+                        {{-- bottom info --}}
+
+                        <div
+                            class="mt-5 flex flex-col
+                               gap-3
+                               text-[11px]
+                               text-slate-400
+                               sm:flex-row
+                               sm:items-center
+                               sm:justify-between">
+
+                            <div class="flex items-center gap-2">
+
+                                <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                    stroke-width="1.8">
+
+                                    <rect x="5" y="10" width="14" height="10" rx="2" />
+
+                                    <path stroke-linecap="round" d="M8 10V7a4 4 0 0 1 8 0v3" />
+
+                                </svg>
+
+                                Safe & Encrypted 256-bit signup
+
+                            </div>
+
+
+                            <a href="#" class="transition hover:text-blue-600">
+                                Need help signing up?
+                            </a>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+
+            {{-- copyright --}}
+
+            <div class="py-5 text-center">
+
+                <p class="text-[11px] text-slate-400">
+                    © {{ now()->year }} StockCore Pty Ltd.
+                    All rights reserved.
+                </p>
+
+                <p class="mt-1 text-[10px] text-slate-400">
+                    Smarter inventory for a stronger business.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    {{-- javascripts --}}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // plan selector
+            const planButtons =
+                document.querySelectorAll('.plan-button');
+
+            const selectedPlanInput =
+                document.getElementById('selected-plan');
+
+            const selectedPlanLabel =
+                document.getElementById('selected-plan-label');
+
+
+            function activatePlan(button) {
+
+                planButtons.forEach(function(item) {
+
+                    item.classList.remove(
+                        'bg-white',
+                        'text-blue-600',
+                        'shadow-sm'
+                    );
+
+                    item.classList.add(
+                        'text-slate-600'
+                    );
+
+                });
+
+
+                button.classList.remove(
+                    'text-slate-600'
+                );
+
+
+                button.classList.add(
+                    'bg-white',
+                    'text-blue-600',
+                    'shadow-sm'
+                );
+
+
+                selectedPlanInput.value =
+                    button.dataset.plan;
+
+
+                selectedPlanLabel.textContent =
+                    button.dataset.label;
+
+            }
+
+
+            planButtons.forEach(function(button) {
+
+                button.addEventListener('click', function() {
+
+                    activatePlan(this);
+
+                });
+
+            });
+
+
+
+
+
+            const currentPlan =
+                selectedPlanInput.value;
+
+
+            const currentButton =
+                document.querySelector(
+                    '.plan-button[data-plan="' +
+                    currentPlan +
+                    '"]'
+                );
+
+
+            if (currentButton) {
+
+                selectedPlanLabel.textContent =
+                    currentButton.dataset.label;
+
+            }
+
+
+
+            // password visibility
+
+            const passwordInput =
+                document.getElementById('password');
+
+
+            const togglePassword =
+                document.getElementById('toggle-password');
+
+
+            togglePassword.addEventListener(
+                'click',
+                function() {
+
+                    if (passwordInput.type === 'password') {
+
+                        passwordInput.type = 'text';
+
+                    } else {
+
+                        passwordInput.type = 'password';
+
+                    }
+
+                }
+            );
+
+
+
+            //    password strength
+
+            const strengthBar =
+                document.getElementById(
+                    'password-strength-bar'
+                );
+
+
+            const strengthText =
+                document.getElementById(
+                    'password-strength-text'
+                );
+
+
+            passwordInput.addEventListener(
+                'input',
+                function() {
+
+                    const password = this.value;
+
+                    let score = 0;
+
+
+                    if (password.length >= 8) {
+                        score++;
+                    }
+
+
+                    if (/[a-z]/.test(password)) {
+                        score++;
+                    }
+
+
+                    if (/[A-Z]/.test(password)) {
+                        score++;
+                    }
+
+
+                    if (/[0-9]/.test(password)) {
+                        score++;
+                    }
+
+
+                    if (/[^A-Za-z0-9]/.test(password)) {
+                        score++;
+                    }
+
+
+
+                    /*
+                    | Empty
+                    */
+
+                    if (password.length === 0) {
+
+                        strengthBar.style.width =
+                            '0%';
+
+                        strengthBar.style.backgroundColor =
+                            '';
+
+                        strengthText.textContent =
+                            'Enter a password';
+
+                        strengthText.style.color =
+                            '';
+
+                        return;
+
+                    }
+
+
+
+                    /*
+                    | Weak
+                    */
+
+                    if (score <= 2) {
+
+                        strengthBar.style.width =
+                            '30%';
+
+                        strengthBar.style.backgroundColor =
+                            '#ef4444';
+
+                        strengthText.textContent =
+                            'Weak';
+
+                        strengthText.style.color =
+                            '#ef4444';
+
+                        return;
+
+                    }
+
+
+
+                    /*
+                    | Medium
+                    */
+
+                    if (score <= 3) {
+
+                        strengthBar.style.width =
+                            '65%';
+
+                        strengthBar.style.backgroundColor =
+                            '#f59e0b';
+
+                        strengthText.textContent =
+                            'Medium';
+
+                        strengthText.style.color =
+                            '#f59e0b';
+
+                        return;
+
+                    }
+
+
+
+                    /*
+                    | Strong
+                    */
+
+                    strengthBar.style.width =
+                        '100%';
+
+                    strengthBar.style.backgroundColor =
+                        '#10b981';
+
+                    strengthText.textContent =
+                        'Strong';
+
+                    strengthText.style.color =
+                        '#10b981';
+
+                }
+            );
+
+        });
+    </script>
+
+@endsection

@@ -27,18 +27,19 @@
 
 
             {{-- Heading --}}
-            <h1 class="text-4xl font-extrabold leading-[1.08] tracking-[-0.035em] text-slate-900 sm:text-5xl">
-
+            <h1
+                class="text-4xl font-extrabold
+           leading-[1.08]
+           tracking-[-0.035em]
+           text-slate-900
+           sm:text-5xl">
                 Everything you need to
 
-                <span class="relative whitespace-nowrap text-blue-600">
-
+                <span class="relative block
+               text-blue-600
+               sm:inline">
                     manage inventory smarter
-
-
-
                 </span>
-
             </h1>
 
 
