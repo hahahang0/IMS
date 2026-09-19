@@ -280,7 +280,7 @@
 
                         {{-- Button --}}
 
-                        <button type="button"
+                        {{-- <button type="button"
                             class="
                                 mt-4
                                 h-11
@@ -297,7 +297,31 @@
 
                             {{ $plan['button'] }}
 
-                        </button>
+                        </button> --}}
+
+                        <a href="{{route('public.auth.signup')}}"
+                            class="
+        mt-4
+        flex
+        h-11
+        w-full
+        items-center
+        justify-center
+        rounded-lg
+        text-xs
+        font-bold
+        transition
+
+        {{ $plan['popular']
+            ? 'bg-blue-600 text-white shadow-sm hover:bg-blue-700'
+            : 'border border-blue-200 bg-white text-blue-600 hover:bg-blue-50' }}
+
+        hover:cursor-pointer
+    ">
+
+                            {{ $plan['button'] }}
+
+                        </a>
 
 
                         {{-- stats --}}

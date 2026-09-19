@@ -488,7 +488,8 @@
                </div>
 
 
-               <a href="{{ route('public.industries') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="{{ route('public.industries') }}"
+                   class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    Industries
                </a>
 
@@ -496,17 +497,21 @@
                    Integrations
                </a> --}}
 
-               <a href="{{ route('public.pricing') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="{{ route('public.pricing') }}"
+                   class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    Pricing
                </a>
 
-               <a href="{{ route('public.blog') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="{{ route('public.blog') }}"
+                   class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    blog
                </a>
-                  <a href="{{ route('public.about_us') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="{{ route('public.about_us') }}"
+                   class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    About
                </a>
-                 <a href="{{ route('public.contact') }}" class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
+               <a href="{{ route('public.contact') }}"
+                   class='text-md font-medium text-slate-600 transition hover:text-blue-600'>
                    Contact
                </a>
 
@@ -514,7 +519,7 @@
 
 
            {{-- login and start-trail buttons --}}
-           <div class="flex items-center gap-5">
+           {{-- <div class="flex items-center gap-5">
 
                <a href="{{route('public.auth.login')}}"
                    class='hidden text-md font-medium text-slate-700 transition hover:text-blue-600 sm:block'>
@@ -527,8 +532,170 @@
 
                </a>
 
+           </div> --}}
+
+
+
+           {{-- Desktop Login / Start Trial --}}
+           <div class="hidden items-center gap-5 md:flex">
+
+               <a href="{{ route('public.auth.login') }}"
+                   class="text-md font-medium text-slate-700 transition hover:text-blue-600">
+                   Login
+               </a>
+
+               <a href="{{ route('public.auth.signup') }}"
+                   class="group inline-flex items-center rounded-lg bg-primary-600 px-5 py-2.5 text-md font-semibold text-white shadow-sm transition duration-200 hover:bg-blue-700 hover:shadow-md">
+                   Start Free Trial
+               </a>
+
+           </div>
+
+
+           {{-- Mobile Hamburger Button --}}
+           <button type="button" id="mobileMenuButton"
+               class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-700 transition hover:bg-slate-50 md:hidden"
+               aria-label="Open navigation menu">
+
+               {{-- Hamburger icon --}}
+               <svg id="menuOpenIcon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+
+               </svg>
+
+
+               {{-- Close icon --}}
+               <svg id="menuCloseIcon" xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+
+                   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+
+               </svg>
+
+           </button>
+
+       </div>
+       {{-- =========================================================
+    Mobile Navigation Menu
+========================================================= --}}
+       <div id="mobileMenu" class="hidden border-t border-slate-200 bg-white md:hidden">
+
+           <div class="mx-auto max-w-7xl px-6 py-5">
+
+               <div class="flex flex-col">
+
+
+                   {{-- Features --}}
+                   <a href="{{ route('public.features') }}"
+                       class="flex items-center justify-between border-b border-slate-100 py-3.5 text-sm font-semibold text-slate-700 transition hover:text-blue-600">
+
+                       <span>Features</span>
+
+                       <svg class="h-4 w-4 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                           stroke-width="2">
+
+                           <path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6" />
+
+                       </svg>
+
+                   </a>
+
+
+                   {{-- Industries --}}
+                   <a href="{{ route('public.industries') }}"
+                       class="border-b border-slate-100 py-3.5 text-sm font-semibold text-slate-700 transition hover:text-blue-600">
+
+                       Industries
+
+                   </a>
+
+
+                   {{-- Pricing --}}
+                   <a href="{{ route('public.pricing') }}"
+                       class="border-b border-slate-100 py-3.5 text-sm font-semibold text-slate-700 transition hover:text-blue-600">
+
+                       Pricing
+
+                   </a>
+
+
+                   {{-- Blog --}}
+                   <a href="{{ route('public.blog') }}"
+                       class="border-b border-slate-100 py-3.5 text-sm font-semibold text-slate-700 transition hover:text-blue-600">
+
+                       Blog
+
+                   </a>
+
+
+                   {{-- About --}}
+                   <a href="{{ route('public.about_us') }}"
+                       class="border-b border-slate-100 py-3.5 text-sm font-semibold text-slate-700 transition hover:text-blue-600">
+
+                       About
+
+                   </a>
+
+
+                   {{-- Contact --}}
+                   <a href="{{ route('public.contact') }}"
+                       class="border-b border-slate-100 py-3.5 text-sm font-semibold text-slate-700 transition hover:text-blue-600">
+
+                       Contact
+
+                   </a>
+
+
+                   {{-- Login --}}
+                   <a href="{{ route('public.auth.login') }}"
+                       class="py-3.5 text-sm font-semibold text-slate-700 transition hover:text-blue-600">
+
+                       Login
+
+                   </a>
+
+
+                   {{-- Start Free Trial --}}
+                   <a href="{{ route('public.auth.signup') }}"
+                       class="mt-3 flex h-11 w-full items-center justify-center rounded-lg bg-primary-600 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700">
+
+                       Start Free Trial
+
+                   </a>
+
+               </div>
+
            </div>
 
        </div>
 
    </nav>
+
+
+
+   <script>
+       $(document).ready(function() {
+
+           const $menuButton = $('#mobileMenuButton');
+           const $mobileMenu = $('#mobileMenu');
+           const $openIcon = $('#menuOpenIcon');
+           const $closeIcon = $('#menuCloseIcon');
+
+           if (!$menuButton.length || !$mobileMenu.length) {
+               return;
+           }
+
+           $menuButton.on('click', function() {
+
+               $mobileMenu.toggleClass('hidden');
+
+               $openIcon.toggleClass('hidden');
+
+               $closeIcon.toggleClass('hidden');
+
+           });
+
+       });
+   </script>

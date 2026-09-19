@@ -637,7 +637,7 @@
 
 
                 {{-- Contact --}}
-                <a href="mailto:hello@stockcore.com.au"
+                <a href="{{route('public.support')}}"
                     class="group inline-flex
                            min-h-[50px]
                            shrink-0

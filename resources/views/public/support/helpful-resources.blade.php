@@ -461,7 +461,7 @@
 
 
                 {{-- RIGHT --}}
-                <a href="#"
+                <a href="{{route('public.auth.signup')}}"
                     class="group
                            inline-flex
                            items-center gap-2

@@ -94,7 +94,7 @@
                                sm:flex-row">
 
                         {{-- Get demo --}}
-                        <a href="#"
+                        <a href="{{ route('public.auth.signup') }}"
                             class="group inline-flex min-h-[54px]
                                    items-center justify-center
                                    gap-3
@@ -121,7 +121,7 @@
 
 
                         {{-- Free trial --}}
-                        <a href="#"
+                        <a href="{{ route('public.auth.signup') }}"
                             class="group inline-flex min-h-[54px]
                                    items-center justify-center
                                    gap-3

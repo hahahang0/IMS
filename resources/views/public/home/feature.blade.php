@@ -209,7 +209,7 @@
           <div class="features-grid mx-auto mt-16 max-w-6xl">
 
               {{-- Feature 1 --}}
-              <a href="#" class="feature-card group">
+              <a href="{{route('public.features.landing-cost')}}" class="feature-card group">
                   {{-- 
                 <div class="feature-icon">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
@@ -246,7 +246,7 @@
 
 
               {{-- Feature 2 --}}
-              <a href="#" class="feature-card group">
+              <a href="{{route('public.features.scan-import')}}" class="feature-card group">
 
                   {{-- <div class="feature-icon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-6 w-6">
@@ -284,7 +284,7 @@
 
 
               {{-- Feature 3 --}}
-              <a href="#" class="feature-card group">
+              <a href="{{route('public.features.stock-tracking')}}" class="feature-card group">
 
                      <div class="feature-icon">
                       <dotlottie-wc src="{{ asset('lottie/stocks.json') }}" autoplay loop class="lottie-icon">
@@ -314,7 +314,7 @@
 
 
               {{-- Feature 4 --}}
-              <a href="#" class="feature-card group">
+              <a href="{{route('public.features.serial-expiry-tracking')}}" class="feature-card group">
 
                   {{-- <div class="feature-icon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-6 w-6">
@@ -351,7 +351,7 @@
 
 
               {{-- Feature 5 --}}
-              <a href="#" class="feature-card group">
+              <a href="{{route('public.features.fifo')}}" class="feature-card group">
 
                   {{-- <div class="feature-icon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-6 w-6">
@@ -390,7 +390,7 @@
 
 
               {{-- Feature 6 --}}
-              <a href="#" class="feature-card group">
+              <a href="{{route('public.features.packeting')}}" class="feature-card group">
 {{-- 
                   <div class="feature-icon">
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"

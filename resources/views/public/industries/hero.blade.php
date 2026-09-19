@@ -128,7 +128,7 @@
                 >
 
                     <a
-                        href="#contact"
+                        href="{{ route('public.auth.signup') }}"
                         class="group inline-flex
                                items-center justify-center gap-2
                                rounded-xl

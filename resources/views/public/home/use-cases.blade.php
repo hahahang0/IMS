@@ -268,7 +268,7 @@
 
                     <div class="mt-9 flex flex-wrap items-center gap-6">
 
-                        <a href="#"
+                        <a href="{{ route('public.demo') }}"
                             class="inline-flex items-center gap-3 rounded-xl bg-primary-600 px-5 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700 hover:shadow-xl">
                             Explore this use case
 
@@ -281,7 +281,7 @@
                         </a>
 
 
-                        <a href="#"
+                        <a href="{{ route('public.industries') }}"
                             class="inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition hover:gap-3">
                             View all industries
 

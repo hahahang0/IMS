@@ -238,7 +238,7 @@
                             </div>
 
 
-                            <a href="#"
+                            <a href="{{ route('public.auth.signup') }}"
                                 class="inline-flex
                             h-12
                             min-w-[145px]

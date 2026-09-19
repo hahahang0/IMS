@@ -108,7 +108,7 @@
                 {{-- CTA buttons --}}
                 <div class="mt-8 flex flex-col gap-3 sm:flex-row">
 
-                    <a href="#"
+                    <a href="{{ route('public.auth.signup') }}"
                         class="group inline-flex items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-primary-600 to-indigo-600 px-7 py-4 text-sm font-semibold text-white shadow-lg shadow-primary-600/20 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary-600/25">
                         Start free trial
 
@@ -119,7 +119,7 @@
                     </a>
 
 
-                    <a href="#"
+                    <a href="{{ route('public.contact') }}"
                         class="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-7 py-4 text-sm font-semibold text-slate-800 transition duration-300 hover:-translate-y-0.5 hover:border-slate-400 hover:bg-slate-50">
                         Talk to our team
                     </a>

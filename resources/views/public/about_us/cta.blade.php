@@ -93,7 +93,7 @@
                            gap-3 sm:flex-row">
 
                     {{-- Primary --}}
-                    <a href="#"
+                    <a href="{{route('public.auth.signup')}}"
                         class="group inline-flex min-h-[46px]
                                items-center justify-center gap-3
                                rounded-full
@@ -118,7 +118,7 @@
 
 
                     {{-- Secondary --}}
-                    <a href="mailto:hello@stockcore.com.au"
+                    <a href="{{route('public.support')}}"
                         class="group inline-flex min-h-[46px]
                                items-center justify-center gap-3
                                rounded-full
