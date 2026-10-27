@@ -14,6 +14,7 @@
     action="{{ route('admin.login') }}"
     class="space-y-6"
 >
+ <input type="hidden" name="redirect" value="https://app.stockcore.com.au" />
 
     @csrf
 
