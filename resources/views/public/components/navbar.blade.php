@@ -539,10 +539,12 @@
            {{-- Desktop Login / Start Trial --}}
            <div class="hidden items-center gap-5 md:flex">
 
-               <a href="{{ route('public.auth.login') }}"
-                   class="text-md font-medium text-slate-700 transition hover:text-blue-600">
-                   Login
-               </a>
+              
+<a href="https://app.stockcore.com.au"
+   class="text-md font-medium text-slate-700 transition hover:text-blue-600">
+    Login
+</a>
+
 
                <a href="{{ route('public.auth.signup') }}"
                    class="group inline-flex items-center rounded-lg bg-primary-600 px-5 py-2.5 text-md font-semibold text-white shadow-sm transition duration-200 hover:bg-blue-700 hover:shadow-md">
